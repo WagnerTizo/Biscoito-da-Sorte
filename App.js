@@ -14,6 +14,7 @@ class App extends Component{
       
       this.quebraBiscoito = this.quebraBiscoito.bind(this);
 
+      //60 frases para aparecer na abertura do biscoito
       this.frases = [
          'A vida trará coisas boas se tiver paciência.',
          'Demonstre amor e alegria em todas as oportunidades e verá que a paz nasce dentro de si.',
