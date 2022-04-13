@@ -3,13 +3,12 @@ import { View,Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 class App extends Component{
 
+
    constructor(props){
       super(props);
       this.state = {
          textoFrase: '',
          img: require('./src/images/biscoito.png'),
-
-
       };
       
       this.quebraBiscoito = this.quebraBiscoito.bind(this);
@@ -89,7 +88,14 @@ class App extends Component{
          img: require('./src/images/biscoitoAberto.png')
 
       });
+
+      this.fechaBiscoito()
    }
+
+   fechaBiscoito(){
+      setTimeout(() => this.setState({img: require('./src/images/biscoito.png'), textoFrase: null }), 5000)
+   }
+   
 
    render(){
       return(
